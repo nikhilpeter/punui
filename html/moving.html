@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            image moving
+        </title>
+        <script>
+            function move(){
+            var xx=document.getElementById("x").value;
+            var yy=document.getElementById("y").value;
+            bin.style.top=xx;
+            bin.style.left=yy; 
+            bin.style.position="absolute";
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <img src="nagi.png" id="bin" width="300px" height="300px"><br>
+        X-cordinate<input type="text" id="x">
+        y-cordinate<input type="text" id="y"><br>
+        <input type="button" value="done" onClick="move()">
+    </body>
+</html>

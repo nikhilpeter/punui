@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            pattern
+        </title>
+        <script type="text/javascript">
+            function validate(){
+            var x=document.getElementById("phone").value;
+            var y=x.search(/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/);
+            if (y !=0 ){
+                alert("the entered number is invalid");
+                document.getElementById("phone").onfocus();
+                document.getElementById("phone").onselect();
+            }
+            else
+            {
+                alert("the number is Valid");
+            }
+
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+        <h2>Enter you'r number</h2>
+        <input type="text" id="phone">
+        <input type="button"  value="submit" onClick="validate()">
+    </body>
+</html>
